@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4ecca3;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#score-board {
+    display: flex;
+    gap: 32px;
+    font-size: 1rem;
+    color: #a0a0c0;
+}
+
+#score-board span {
+    font-weight: bold;
+}
+
+#score, #high-score {
+    color: #4ecca3;
+}
+
+#game-canvas {
+    border: 2px solid #4ecca3;
+    border-radius: 4px;
+    background-color: #16213e;
+    display: block;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.3);
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(22, 33, 62, 0.95);
+    border: 2px solid #4ecca3;
+    border-radius: 8px;
+    padding: 24px 32px;
+    text-align: center;
+    z-index: 10;
+}
+
+#message.hidden {
+    display: none;
+}
+
+#message-text {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: #e94560;
+}
+
+#restart-btn {
+    background-color: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#restart-btn:hover {
+    background-color: #3ab08a;
+}
+
+#controls {
+    color: #606080;
+    font-size: 0.85rem;
+}
